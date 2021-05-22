@@ -32,7 +32,7 @@ public class RepeticaoController {
 			String retorno = retorno + String.valueOf(contador); 
 		}*/
 
-		int cont = 0;  
+		int cont = 1;  
 		String retorno = "";
 		while (cont <= numero) {
 			retorno = retorno + String.valueOf(cont); 
