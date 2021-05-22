@@ -1,3 +1,4 @@
+
 package br.com.impacta.lab.controller;
 
 import org.springframework.http.ResponseEntity;
@@ -26,9 +27,20 @@ public class RepeticaoController {
 		 * 
 		 *  
 		 */
+		//String retorno = "";
+		/*for (int contador = 0;contador <= numero; contador++){
+			String retorno = retorno + String.valueOf(contador); 
+		}*/
+
+		int cont = 0;  
+		String retorno = "";
+		while (cont <= numero) {
+			retorno = retorno + String.valueOf(cont); 
+			cont++;
+		}
+		return ResponseEntity.ok(retorno);
 		
-		
-		return ResponseEntity.ok(<APÓS O ALGORITMO COLOCAR A VARIAVEL String DE RETORNO AQUI>);
+		//return ResponseEntity.ok(<APÓS O ALGORITMO COLOCAR A VARIAVEL String DE RETORNO AQUI>);
 	}
 	
 }
